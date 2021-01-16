@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="products">
+        <div class="container">
+            <div class="products__wrapper">
+                <!-- <div class="products__product">
+                    <div class="products__img">
+                        <img src="http://dev-wbooster.ru/test_task/img/img-1.png" alt="">
+                    </div>
+                    <div class="products__description">
+                        <span>Парикмахерское кресло «Норм» гидравлическое</span>
+                    </div>
+                    <div class="products__price">
+                        <span>9 900 ₽</span>
+                    </div>
+                    <button class="products__btn popup-link">Купить</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div id = "overlay" class="popup__body">
+            <div class="popup__content">
+                <a href="#" class="popup__close">X</a>
+                <form id="form" action="mail.php" method="POST">
+                    <fieldset class="popup__wrapper">
+                        <legend class="popup__title">Введите данные для связи</legend>
+                        <input class="popup__item name" type="text" name="name" placeholder="Ваше имя" >
+                        <input class="popup__item phone" type="tel" name="phone" placeholder="Ваш номер">
+                        <input class="popup__item email" type="text" name="email" placeholder="Ваш email">
+                        <input class="popup__item product" type="text" name="product" placeholder="Наименование товара">
+                        <button class="button popup__button" type="submit" name="send">Отправить</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
